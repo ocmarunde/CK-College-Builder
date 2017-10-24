@@ -12,6 +12,7 @@
 		9DDA49A91F9F78A80042E6E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDA49A71F9F78A80042E6E7 /* Main.storyboard */; };
 		9DDA49AB1F9F78A80042E6E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DDA49AA1F9F78A80042E6E7 /* Assets.xcassets */; };
 		9DDA49AE1F9F78A80042E6E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDA49AC1F9F78A80042E6E7 /* LaunchScreen.storyboard */; };
+		9DDA49B81F9F79010042E6E7 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDA49B71F9F79010042E6E7 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		9DDA49AA1F9F78A80042E6E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DDA49AD1F9F78A80042E6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DDA49AF1F9F78A80042E6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DDA49B51F9F78EB0042E6E7 /* CK College Builder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CK College Builder.entitlements"; sourceTree = "<group>"; };
+		9DDA49B71F9F79010042E6E7 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DDA49B81F9F79010042E6E7 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +44,7 @@
 			children = (
 				9DDA49A21F9F78A80042E6E7 /* CK College Builder */,
 				9DDA49A11F9F78A80042E6E7 /* Products */,
+				9DDA49B61F9F79010042E6E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +59,7 @@
 		9DDA49A21F9F78A80042E6E7 /* CK College Builder */ = {
 			isa = PBXGroup;
 			children = (
+				9DDA49B51F9F78EB0042E6E7 /* CK College Builder.entitlements */,
 				9DDA49A31F9F78A80042E6E7 /* AppDelegate.swift */,
 				9DDA49A51F9F78A80042E6E7 /* ViewController.swift */,
 				9DDA49A71F9F78A80042E6E7 /* Main.storyboard */,
@@ -62,6 +68,14 @@
 				9DDA49AF1F9F78A80042E6E7 /* Info.plist */,
 			);
 			path = "CK College Builder";
+			sourceTree = "<group>";
+		};
+		9DDA49B61F9F79010042E6E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DDA49B71F9F79010042E6E7 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +111,14 @@
 					9DDA499F1F9F78A80042E6E7 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -274,11 +296,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "CK College Builder/CK College Builder.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BS5L7VPV7M;
+				DEVELOPMENT_TEAM = BWYT76Q3DS;
 				INFOPLIST_FILE = "CK College Builder/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.jhhs.618029.CK-College-Builder";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.jhhs.618029.College-Builder-CK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -289,11 +312,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "CK College Builder/CK College Builder.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BS5L7VPV7M;
+				DEVELOPMENT_TEAM = BWYT76Q3DS;
 				INFOPLIST_FILE = "CK College Builder/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.jhhs.618029.CK-College-Builder";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.jhhs.618029.College-Builder-CK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
